@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+      font-family: 'Old Standard TT';
+      src: url(fonts/OldStandardTT-Regular.ttf) format('ttf');
+    }
+
+    @font-face {
+      font-family: 'Lato';
+      src: url(fonts/Lato-Regular.ttf) format('ttf');
+    }
+
+    h1 {
+        @apply font-old-standard text-6xl uppercase;
+    }
+
+    h2 {
+        @apply text-3xl uppercase;
+    }
+
+    h3 {
+        @apply text-xl uppercase;
+    }
+
+    body {
+        @apply font-lato text-gray;
+    }
+}

@@ -1,0 +1,1 @@
+GET https://sdw-wsrest.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?lastNObservations=1&detail=dataonly&dimensionAtObservation=AllDimensions
