@@ -5,12 +5,12 @@
 @layer base {
     @font-face {
       font-family: 'Old Standard TT';
-      src: url(fonts/OldStandardTT-Regular.ttf) format('ttf');
+      src: url(fonts/oldstandard.ttf);
     }
 
     @font-face {
       font-family: 'Lato';
-      src: url(fonts/Lato-Regular.ttf) format('ttf');
+      src: url(fonts/lato.ttf);
     }
 
     h1 {
@@ -28,4 +28,24 @@
     body {
         @apply font-lato text-gray;
     }
+
+    input, textarea {
+        @apply text-gray p-2 rounded border border-gray;
+    }
+}
+
+@keyframes sidebar-slide-in {
+    0%   {width: 0;}
+    50%   {width: 50%;}
+    100% {width: 100%}
+}
+
+.sidebar:hover .sidebar-text{
+    display: inline-flex;
+    /*animation-name: sidebar-slide-in;*/
+    /*animation-duration: 4s;*/
+}
+
+.auction-dealer-logos a:hover {
+    opacity: .6;
 }

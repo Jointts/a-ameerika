@@ -10,11 +10,12 @@ module.exports = {
             textColor: {
                 'red': '#C01B33',
                 'gray': '#2D2F31',
-                'gray-white': '#E4E4E4',
+                'gray-white': '#BCBCBC',
                 'white': '#FFFFFF',
             },
             container: {
                 center: true,
+                padding: '2rem',
             },
             backgroundImage: theme => ({
                 'car': "url('img/car.png')",
@@ -23,15 +24,16 @@ module.exports = {
                 "screen/2": "50vh",
             }),
             borderColor: theme => ({
-                'gray': '#E4E4E4',
+                'gray': '#D5D5D5',
                 'red': '#C01B33',
+                'black': 'black',
             }),
             width: {
                 '150': '150%'
             },
             backgroundColor: theme => ({
                 'red': '#C01B33',
-            })
+            }),
         },
     },
     variants: {

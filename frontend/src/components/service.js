@@ -2,16 +2,16 @@ import phoneBlack from "../img/phone_black.png";
 import mailBlack from "../img/mail_black.png";
 
 const Service = ({number, title, phoneNr, email, image, personName}) => (
-    <span className={'grid grid-cols-4 gap-12'}>
-      <span className={'col-span-1'}>
-        <img className={'bg-red p-6'} alt={'Konsultatsioon'} src={image}/>
+    <span className={'col-span-2 md:col-span-1 grid grid-cols-8 sm:gap-12 gap-6'}>
+      <span className={'md:col-span-2 col-span-3'}>
+        <img className={'bg-red lg:p-6 p-4'} alt={'Konsultatsioon'} src={image}/>
       </span>
-      <span className={'col-span-3'}>
-        <h3>
+      <span className={'md:col-span-6 col-span-5'}>
+        <h3 className={'md:text-xl text-lg'}>
             <span className={'text-gray-white'}>{number} / </span>
             {title}
         </h3>
-        <span className={'grid'}>
+        <span className={'grid md:text-base text-sm'}>
             <span className={'row-span-1 pt-4'}>{personName}</span>
             <span className={'row-span-1 pt-2'}>
                 <img alt={'telefon'} className={'w-6 inline'} src={phoneBlack}/>
