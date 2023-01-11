@@ -3,7 +3,7 @@ import axios from "axios";
 import copart from '../img/copart.svg';
 import iaai from '../img/iaai.png';
 
-const Calculator = () => {
+const Calculator = ({analytics}) => {
     const [carPrice, setCarPrice] = useState(10000);
     const [price, setPrice] = useState();
 
@@ -13,7 +13,15 @@ const Calculator = () => {
         }
     }, [carPrice]);
 
-    const calculateCost = (event) => setCarPrice(event.target.value);
+    const trackCalculation = (carPrice) => analytics.track('calculation', {
+        carPrice,
+    });
+
+    const calculateCost = (event) => {
+        const carPrice = event.target.value;
+        setCarPrice(carPrice);
+        trackCalculation(carPrice);
+    };
 
     const SectionHeader = ({number, text}) => (
         <span className={'col-span-2 md:text-2xl text-lg'}>
@@ -61,6 +69,10 @@ const Calculator = () => {
                         <tr>
                             <td>Sisetransport</td>
                             <td>{price?.inner_transport} €</td>
+                        </tr>
+                        <tr>
+                            <td>Sadamamaksud ja transport A-Ameerika platsi</td>
+                            <td>{price?.port_fees} €</td>
                         </tr>
                         <tr>
                             <td>Teenus ja dokumentatsioon</td>
