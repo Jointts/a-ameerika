@@ -7,7 +7,7 @@ import Home from "./Home";
 
 ReactDOM.render(
     <React.StrictMode>
-        <ToastContainer autoClose={10000}/>
+        <ToastContainer position="top-center" autoClose={10000}/>
         <Home />
     </React.StrictMode>,
   document.getElementById('root')
