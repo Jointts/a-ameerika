@@ -125,14 +125,14 @@ const Home = () => {
                 background: 'linear-gradient(rgb(19, 51, 84) 0%, rgb(57 42 59) 100%)'
             }}>
                 <div className={'container py-16 text-white grid grid-cols-2'}>
-                    <span className={'col-span-1 grid'}>
+                    <span className={'sm:col-span-1 col-span-2 grid'}>
                         <span className={'mt-2'}>A-Ameerika OÜ</span>
                         <span className={'mt-2'}>
                             <a target="_blank" rel="noreferrer" href={'https://goo.gl/maps/f7wnw1eHpktt7WpW9'}>Lembitu tn 7-79, Tallinn 10114</a>
                         </span>
                         <span className={'mt-2'}>EE927700771006240070</span>
                     </span>
-                    <span className={'col-span-1 grid justify-end'}>
+                    <span className={'sm:col-span-1 col-span-2 grid mt-8 md:mt-0 justify-start md:justify-end'}>
                         <span>
                             <img alt={'telefon'} className={'w-6 inline-flex mr-3'} src={phone}/>
                             +372 507 1759 - Konsultatsioon ja müük
