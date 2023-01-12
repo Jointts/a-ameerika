@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import copart from '../img/copart.svg';
 import iaai from '../img/iaai.png';
+import PriceRequestModal from "./priceRequestModal";
 
 const Calculator = ({analytics}) => {
     const [carPrice, setCarPrice] = useState(10000);
@@ -41,6 +42,8 @@ const Calculator = ({analytics}) => {
                     <img className={'ml-8 inline-flex h-16 md:h-24'} alt={'iaai'} src={iaai}/>
                 </a>
             </span>
+            <SectionHeader number={'1.1'} text={'Täida hinnapäringu vorm'}/>
+            <PriceRequestModal/>
             <SectionHeader number={'2'} text={'Sisesta soovitud auto hind ja arvuta kogumaksumus'}/>
             <span className={'lg:col-span-1 col-span-2'}>
                 <div className={'bg-white rounded p-8 md:p-16 grid'}>
