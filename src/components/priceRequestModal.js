@@ -102,6 +102,7 @@ const PriceRequestModal = () => {
                                                placeholder="5000" required/>
                                     </div>
                                 </span>
+                                <span className={'d-none bg-gray-900 md:inset-0 inset-0'}/>
                                 <Button type={'submit'} text={'Saada hinnapäring'}
                                         className={'w-full mt-12'}/>
                             </form>
