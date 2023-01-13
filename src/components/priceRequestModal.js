@@ -55,7 +55,7 @@ const PriceRequestModal = () => {
                         </button>
                         <div className="px-6 py-6 lg:px-8">
                             <h3 className="mb-4 text-xl font-medium text-gray-900 dark:text-white">Hinnapäring</h3>
-                            <h4>Modaali sulgemisel jääb sisestatud info alles</h4>
+                            <h4>Vormi sulgemisel jääb sisestatud info alles</h4>
                             <form className={'mt-6'} onSubmit={sendPriceRequest} onInvalid={(e) => e.target.setCustomValidity('See väli on täitmata/vigadega')}
                                   onInput={(e) => e.target.setCustomValidity('')}>
                                 <span className={'space-y-6'}>
@@ -99,10 +99,9 @@ const PriceRequestModal = () => {
                                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Oksjonikuulutuse link (Coparts/IAAI lehelt)</label>
                                         <input onChange={setAuctionLink} type="url" name="auction_link" id="auction_link"
                                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                                               placeholder="5000" required/>
+                                               placeholder="https://www.copart.com/..." required/>
                                     </div>
                                 </span>
-                                <span className={'d-none bg-gray-900 md:inset-0 inset-0'}/>
                                 <Button type={'submit'} text={'Saada hinnapäring'}
                                         className={'w-full mt-12'}/>
                             </form>

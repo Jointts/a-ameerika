@@ -137,11 +137,11 @@ const Home = () => {
                             <img alt={'telefon'} className={'w-6 inline-flex mr-3'} src={phone}/>
                             +372 507 1759 - Konsultatsioon ja müük
                         </span>
-                        <span>
+                        <span className={'sm:mt-0 mt-2'}>
                             <img alt={'telefon'} className={'w-6 inline-flex mr-3'} src={phone}/>
                             +372 501 7765 - Finants ja müük
                         </span>
-                        <span>
+                        <span className={'sm:mt-0 mt-2'}>
                             <img alt={'mail'} className={'w-6 inline-flex mr-3'} src={mail}/>
                             info@a-ameerika.ee
                         </span>
