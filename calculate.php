@@ -36,6 +36,9 @@ $documentation_and_service = .15;
 $taxable = $car_price + $container_price + $inner_transport + $port_fees;
 $tax = ceil($taxable * $tax_percentage);
 $service = ceil(($tax + $taxable + $customs) * $documentation_and_service);
+if($service > 5900) {
+    $service = 5900;
+}
 $total = $taxable + $customs + $service;
 $tax = ceil($total * $tax_percentage);
 $total = $taxable + $tax + $customs + $service;
