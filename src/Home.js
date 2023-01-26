@@ -92,6 +92,13 @@ const Home = () => {
             }}>
                 <div className={'container py-32'}>
                     <Calculator analytics={analytics}/>
+                    <span className={'text-white pt-32 flex'}>
+                        <span className={'bg-red text-white text-2xl h-10 w-10 text-center pt-1 flex-none mt-2'}>i</span>
+                        <span className={'ml-8 flex-grow'}>
+                            <span className={'text-lg block'}>Autode hoiustamine teenus A-Ameerika platsil</span>
+                            <span className={'text-md block'}>Esimene nädal tasuta, iga järgnev päev 8€</span>
+                        </span>
+                    </span>
                 </div>
             </div>
             <div className={'container py-32'}>
